@@ -5,10 +5,14 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <nav className="container">
-      <Header />
-      <Main />
-      <Footer />
-    </nav>
+    <div className="container">
+      <div className="background">
+        <div className="card">
+          <Header />
+          <Main />
+          <Footer />
+        </div>
+      </div>
+    </div>
   );
 }

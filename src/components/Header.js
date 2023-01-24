@@ -11,17 +11,19 @@ export default function Header() {
         alt="Picture of the business card"
         className="card-img"
       />
-      <h2>Laura Smith</h2>
-      <h2>Frontend Developer</h2>
-      <p>laurasmith.website</p>
-      <a href="#">
-        <img src={email} alt="email logo" className="btn-icon" />
-        Email
-      </a>
-      <a href="#">
-        <img src={linkendin} alt="linkendin logo" className="btn-icon" />
-        LinkedIn
-      </a>
+      <h2 className="card-name">Laura Smith</h2>
+      <h3 className="card-job">Frontend Developer</h3>
+      <p className="card-web">laurasmith.website</p>
+      <nav className="btns">
+        <a className="btn btn-email" href="#">
+          <img src={email} alt="email logo" className="btn-icon" />
+          <span>Email</span>
+        </a>
+        <a className="btn btn-linkedin" href="#">
+          <img src={linkendin} alt="linkendin logo" className="btn-icon" />
+          <span>LinkedIn</span>
+        </a>
+      </nav>
     </header>
   );
 }
